@@ -1,9 +1,9 @@
 pipeline{
     agent any
     stages{
-        stage('Launch'){
+        stage('Run-stress-test'){
             steps{
-              sh "docker run -d -p 8083:8080 matheusdocker95/gocalculator:calculator"
+              sh "./gradlew gatlingRun"
             }
         }
     }
