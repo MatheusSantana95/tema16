@@ -11,8 +11,8 @@ import scala.language.postfixOps
 class SampleSimulation extends Simulation {
 
   val httpConf: HttpProtocolBuilder = http
-    .baseUrl("http://localhost:8083")
-    .acceptHeader("/calc/history")
+    .baseUrl("http://localhost:8083/")
+    .acceptHeader("calc/history")
     .doNotTrackHeader("1")
     .acceptLanguageHeader("en-US,en;q=0.5")
     .acceptEncodingHeader("gzip, deflate")
