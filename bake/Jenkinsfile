@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Bake'){
             steps{
-                sh 'packer build packer.json'
+                sh 'cd .. && packer build packer.json'
             }
         }
     }     
