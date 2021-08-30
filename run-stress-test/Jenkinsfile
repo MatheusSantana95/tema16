@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Run-stress-test'){
             steps{
-              sh "cd sample-gradle-gatling && ./gradlew gatlingRun"
+              sh "cd run-stress-test/sample-gradle-gatling && ./gradlew gatlingRun"
             }
         }
     }
