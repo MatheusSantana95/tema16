@@ -5,7 +5,7 @@
             "image": "golang:1.13",
             "commit": true,
             "changes": [
-                "WORKDIR /app",
+                "WORKDIR /go/app",
                 "EXPOSE 8080",
                 "ENTRYPOINT go run ."      
                 ]
